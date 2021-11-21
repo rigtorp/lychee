@@ -236,7 +236,7 @@ pub(crate) struct Config {
     pub(crate) method: String,
 
     /// Base URL or website root directory to check relative URLs
-    /// e.g. https://example.org or `/path/to/public`
+    /// e.g. <https://example.org> or `/path/to/public`
     #[structopt(short, long, parse(try_from_str = parse_base))]
     #[serde(default)]
     pub(crate) base: Option<Base>,

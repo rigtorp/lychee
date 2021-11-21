@@ -32,7 +32,7 @@ pub enum Status {
     Excluded,
     /// The request type is currently not supported,
     /// for example when the URL scheme is `slack://` or `file://`
-    /// See https://github.com/lycheeverse/lychee/issues/199
+    /// See <https://github.com/lycheeverse/lychee/issues/199>
     Unsupported(Box<ErrorKind>),
 }
 
